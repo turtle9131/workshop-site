@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>B그룹 · 기획서형 실습</title>
+  <title>B그룹 · 유전체 TRE 플랫폼 신사업 기획서 실습</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,83 +14,286 @@
     </div>
 
     <header class="hero b">
-      <div class="eyebrow">Group B · Planning</div>
-      <h1>B그룹 · 기획서형 실습</h1>
-      <p>시장자료·고객 문제·경쟁 서비스 자료를 기반으로, AI를 활용해 문제 정의 → 솔루션 콘셉트 → 핵심 기능 → MVP 범위 → 기획서 목차를 도출하고 <strong>기획서 초안</strong>을 완성합니다.</p>
+      <div class="eyebrow">Group B · Genomic TRE</div>
+      <h1>🧬 유전체 분석 TRE 플랫폼<br />신사업 기획서 작성 실습</h1>
+      <p>격리된 보안 환경에서 대용량 유전체 데이터를 안전하게 분석하는 <strong>Trusted Research Environment(TRE) SaaS 플랫폼</strong>의 신사업 기획서를 만들고, 발표용 PPT로 시각화합니다. <strong>NotebookLM → Gemini + Canvas → Claude</strong> 흐름으로 자료 분석부터 시각화까지 완성합니다.</p>
       <div class="meta">
-        <span>주요 대상: 솔루션기획 · 신사업 · 서비스기획 · 개발리더 · PM</span>
-        <span>산출물: 신규 솔루션 기획서 초안</span>
+        <span>총 3시간 (50분 수업 + 10분 휴식 × 3세트)</span>
+        <span>도구: NotebookLM · Gemini + Canvas · Claude</span>
+        <span>산출물: 기획서 초안 + 발표용 PPT</span>
       </div>
     </header>
 
-    <!-- 샘플 과제 -->
-    <section id="task">
+    <!-- 개요 -->
+    <section id="overview">
       <div class="section-title">
-        <span class="section-number">📋</span>
-        <h2>샘플 과제</h2>
+        <span class="section-number">📅</span>
+        <h2>실습 타임라인 & 개요</h2>
       </div>
-      <p class="lead"><strong>AI 기반 회의록·업무보고 자동화 솔루션 기획</strong> — 개인 준비 주제가 있다면 아래 자료 대신 본인 주제를 사용하세요.</p>
+      <p class="lead">AI를 활용해 복잡한 규제·기술 문서를 분석하고, 팩트에 근거한 신사업 기획서를 작성한 뒤 발표용 PPT로 시각화하는 실습입니다.</p>
       <table>
-        <thead><tr><th>자료</th><th>내용</th></tr></thead>
+        <thead><tr><th>교시</th><th>시간</th><th>내용</th><th>도구</th></tr></thead>
         <tbody>
-          <tr><td>시장 트렌드 자료</td><td>생성형 AI 업무 자동화 동향</td></tr>
-          <tr><td>고객 페인포인트</td><td>회의록, 보고서, To-do 관리 문제</td></tr>
-          <tr><td>경쟁 서비스 자료</td><td>AI 회의록, 업무 자동화 SaaS 사례</td></tr>
-          <tr><td>내부 역량 자료</td><td>SI, 클라우드, 운영, AI 기술 역량</td></tr>
-          <tr><td>기획서 템플릿</td><td>문제 정의, 타깃 고객, 기능, 로드맵 양식</td></tr>
+          <tr><td rowspan="3">1교시</td><td>00:00~00:20</td><td>세미나 개요 설명 및 AI 툴 접속 확인</td><td>—</td></tr>
+          <tr><td>00:20~00:35</td><td>노트북 생성·자료 업로드·소스 검색 추가</td><td>NotebookLM</td></tr>
+          <tr><td>00:35~00:50</td><td>자료 검토 4단계 (이해→검증→분석→적용)</td><td>NotebookLM</td></tr>
+          <tr><td>휴식</td><td>00:50~01:00</td><td>10분 휴식</td><td>—</td></tr>
+          <tr><td rowspan="2">2교시</td><td>01:00~01:25</td><td>시장 배경·기술 요구사항 도출</td><td>NotebookLM</td></tr>
+          <tr><td>01:25~01:50</td><td>사업 구체화 & 기획서 초안 작성</td><td>Gemini + Canvas</td></tr>
+          <tr><td>휴식</td><td>01:50~02:00</td><td>10분 휴식</td><td>—</td></tr>
+          <tr><td>3교시</td><td>02:00~02:50</td><td>발표용 PPT 제작 및 시각화</td><td>Claude</td></tr>
+          <tr><td>마무리</td><td>02:50~03:00</td><td>결과 공유 · 업무 적용 방안</td><td>—</td></tr>
         </tbody>
       </table>
-      <div class="note">준비 자료가 없다면, 각 단계 프롬프트를 그대로 복사해 붙여넣어도 실습을 진행할 수 있도록 예시가 포함되어 있습니다.</div>
+      <p><strong>준비물:</strong> 실습용 자료 2종 — ①유전체 데이터 분석 플랫폼 공동 사업 기획 제안서, ②AI@Data Report_한국형 데이터 스페이스(K-Data Space) 추진전략_Final + <strong>Pretendard 폰트</strong>(3교시 PPT 제작용) (아래 0. 사전 준비 참고)</p>
+    </section>
+
+    <!-- 0. 사전 준비 -->
+    <section id="prep">
+      <div class="section-title">
+        <span class="section-number">📂</span>
+        <h2>0. 사전 준비 (Prerequisites)</h2>
+      </div>
+      <p class="lead">실습에는 아래 <strong>자료 2종</strong>과 <strong>Pretendard 폰트</strong>가 필요합니다. 각 항목의 <strong>[다운로드]</strong> 버튼을 눌러 파일을 내려받아 두세요. 자료 2종은 1교시에 NotebookLM에 업로드하고, 폰트는 3교시 PPT 제작에 사용합니다.</p>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">자료 1</span>
+          <h3>유전체 데이터 분석 플랫폼 공동 사업 기획 제안서</h3>
+          <a class="btn primary" style="margin-left:auto;" href="files/genomic-platform-proposal.md" download="유전체 데이터 분석 플랫폼 공동 사업 기획 제안서.md">⬇ 다운로드</a>
+        </div>
+        <div class="step-body">
+          <p>유전체 데이터 분석 플랫폼 구축을 위한 <strong>공동 사업 기획·제안 문서</strong>. 사업 배경, 추진 체계, 기술 구성, 기대효과 등이 담겨 있어 이번 실습 기획서의 핵심 뼈대가 됩니다.</p>
+          <p>위 <strong>[다운로드]</strong> 버튼을 눌러 파일을 내려받은 뒤, 1교시에서 NotebookLM에 업로드하세요.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">자료 2</span>
+          <h3>AI@Data Report_한국형 데이터 스페이스(K-Data Space) 추진전략_Final</h3>
+          <a class="btn primary" style="margin-left:auto;" href="files/k-data-space-strategy.pdf" download="AI@Data Report_한국형 데이터 스페이스(K-Data Space) 추진전략_Final.pdf">⬇ 다운로드</a>
+        </div>
+        <div class="step-body">
+          <p>한국형 데이터 스페이스(K-Data Space) 추진전략을 다룬 <strong>정책·전략 보고서</strong>. 데이터 스페이스의 개념, 국내외 동향, 추진 방향이 담겨 있어 시장 배경과 정책 근거로 활용합니다.</p>
+          <p>위 <strong>[다운로드]</strong> 버튼을 눌러 파일을 내려받은 뒤, 1교시에서 NotebookLM에 업로드하세요.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">폰트</span>
+          <h3>Pretendard 폰트 (PPT 제작용)</h3>
+          <a class="btn primary" style="margin-left:auto;" href="files/Pretendard.zip" download="Pretendard.zip">⬇ 다운로드</a>
+        </div>
+        <div class="step-body">
+          <p>3교시 <strong>PPT 제작</strong>에 사용할 폰트입니다. 압축을 풀면 <code>Pretendard-SemiBold.ttf</code>(제목용), <code>Pretendard-Regular.ttf</code>(본문용) 등 9종이 들어 있습니다.</p>
+          <ol>
+            <li>위 <strong>[다운로드]</strong> 버튼을 눌러 <code>Pretendard.zip</code>을 내려받습니다.</li>
+            <li>압축을 풀어 PC에 보관합니다. (3교시에 Claude로 <strong>첨부</strong>할 파일입니다.)</li>
+            <li>내 PC에서도 미리보기를 하려면 TTF 파일을 <strong>모두 선택 → 마우스 오른쪽 → [설치]</strong> 하세요.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">참고자료</span>
+          <h3>McKinsey Consulting Proposal (PPT 디자인·구성 참고용)</h3>
+          <a class="btn primary" style="margin-left:auto;" href="files/McKinsey Consulting Proposal.pdf" download="McKinsey Consulting Proposal.pdf">⬇ 다운로드</a>
+        </div>
+        <div class="step-body">
+          <p>글로벌 컨설팅펌의 제안서로, <strong>표지·간지(섹션 구분)·내용·도식(차트/다이어그램)</strong> 슬라이드의 디자인과 논리 전개를 참고할 수 있는 샘플입니다. NotebookLM 분석용 소스가 아니라, <strong>3교시 Claude로 PPT를 만들 때 참고 제안서(레퍼런스)</strong>로 첨부해 슬라이드 구조·톤앤매너를 벤치마킹하는 용도입니다.</p>
+          <p>위 <strong>[다운로드]</strong> 버튼을 눌러 파일을 내려받은 뒤, 3교시에서 Claude 대화에 <strong>참고 자료로 첨부</strong>하세요.</p>
+        </div>
+      </div>
+
+      <div class="note">자료 2종과 폰트를 내려받아 두면 1교시 NotebookLM 업로드와 3교시 PPT 제작이 매끄럽게 진행됩니다. 배포가 제한된 사내 문서는 취급에 유의하세요.</div>
     </section>
 
     <!-- 1교시 -->
     <section id="step1">
       <div class="section-title">
         <span class="section-number">01</span>
-        <h2>1교시 · 시장·고객 문제 분석</h2>
+        <h2>1교시 · 개요 확인 & NotebookLM 자료 구축·검토</h2>
       </div>
-      <p class="lead">시장자료와 고객 문제를 분석해 솔루션 기회와 사업화 포인트를 도출합니다.</p>
+      <p class="lead">🎯 목표: 실습 도구를 준비하고, 자료를 모아 <strong>NotebookLM 4단계 검토(이해 → 검증 → 분석 → 적용)</strong>로 원본 자료의 맥락을 정확히 파악합니다.</p>
 
       <div class="step">
         <div class="step-head">
-          <span class="step-num">B1</span>
-          <h3>NotebookLM에 자료 업로드</h3>
+          <span class="step-num">1-A</span>
+          <h3>세미나 개요 설명 및 AI 툴 접속 확인</h3>
+          <span class="step-tool">준비</span>
+          <span class="time">00:00~00:20</span>
+        </div>
+        <div class="step-body">
+          <p>진행자의 세미나 개요 설명을 듣고, 실습에 사용할 도구가 모두 정상 준비되었는지 확인합니다. 이번 실습은 <strong>Claude 데스크톱 앱</strong>에서 진행합니다.</p>
+          <ol>
+            <li><a href="https://notebooklm.google.com/" target="_blank" rel="noopener">NotebookLM</a> — Google 계정으로 로그인되는지 확인</li>
+            <li><a href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a> — 로그인 후 입력창에서 <strong>Canvas</strong> 기능이 보이는지 확인</li>
+            <li><strong>Claude 데스크톱 앱</strong> — 설치·로그인 후 새 대화가 열리는지 확인 (아래 설치 안내 참고)</li>
+            <li>사전 준비의 <strong>자료 2종</strong>과 <strong>Pretendard 폰트</strong>가 다운로드되어 있는지 확인</li>
+          </ol>
+
+          <div class="note">🖥️ <strong>Claude 데스크톱 앱 설치</strong><br />
+            ① <a href="https://claude.ai/download" target="_blank" rel="noopener">claude.ai/download</a> 접속<br />
+            ② 본인 OS에 맞는 설치 파일 다운로드 (Windows / macOS)<br />
+            ③ 다운로드한 설치 파일을 실행해 설치<br />
+            ④ 앱을 열고 <strong>Google 계정 또는 이메일로 로그인</strong><br />
+            ⑤ 새 대화 화면이 뜨면 준비 완료
+          </div>
+
+          <div class="note">도구 중 하나라도 로그인·설치가 안 되면 이 시간에 진행자에게 알려 해결하세요. 이후 교시는 모두 준비된 상태를 전제로 진행됩니다.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">1-B</span>
+          <h3>노트북 생성 & 자료 업로드</h3>
           <span class="step-tool">NotebookLM</span>
-          <span class="time">00:00~00:50</span>
+          <span class="time">00:20~00:30</span>
         </div>
         <div class="step-body">
           <ol>
-            <li><a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a> 접속 → <strong>새 노트북 만들기</strong></li>
-            <li>시장 트렌드·고객 페인포인트·경쟁 서비스 자료를 <strong>소스로 추가</strong></li>
-            <li>아래 프롬프트로 시장·고객 문제 분석표를 생성합니다.</li>
+            <li><a href="https://notebooklm.google.com/" target="_blank" rel="noopener">NotebookLM</a>에서 <strong>[새 노트북 생성]</strong>을 클릭합니다.</li>
+            <li>노트북 이름을 <strong><code>[신사업기획] 유전체 TRE 플랫폼</code></strong>으로 지정합니다.</li>
+            <li>사전 준비에서 내려받은 <strong>자료 2종을 모두 업로드</strong>합니다.</li>
+            <li>업로드가 완료되면 NotebookLM이 자동 제공하는 <strong>'소스 가이드(Source Guide)'</strong>와 요약본을 읽고 전체 지식의 뼈대를 확인합니다.</li>
           </ol>
+        </div>
+      </div>
 
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">1-C</span>
+          <h3>관련 자료 검색 & 소스 추가</h3>
+          <span class="step-tool">NotebookLM · Deep Research</span>
+          <span class="time">00:30~00:35</span>
+        </div>
+        <div class="step-body">
+          <p>더 풍부한 근거가 필요하면, NotebookLM의 <strong>[소스 추가] → [소스 탐색(웹 검색)]</strong>에서 <strong>Deep Research 모드</strong>를 선택해 관련 자료를 조사하고 소스로 추가합니다. 아래 프롬프트를 검색창에 붙여넣으세요.</p>
           <div class="prompt">
-            <div class="prompt-label"><span>프롬프트 · 시장·고객 문제 분석표</span>
+            <div class="prompt-label"><span>NotebookLM Deep Research · 검색 프롬프트</span>
               <button class="copy-btn" type="button">복사</button></div>
-            <pre>업로드된 시장·고객·경쟁 자료를 분석해 아래 표 형식으로 정리해줘.
+            <pre>글로벌 유전체 분석 플랫폼과 클라우드 기반 연구 분석 플랫폼(TRE, Trusted Research Environment)에 대해 조사해줘.
 
-1. 시장 변화: 이 영역에서 지금 일어나고 있는 핵심 변화
-2. 고객 페인포인트: 타깃 고객이 실제로 겪는 문제 5가지
-3. 문제의 심각도/빈도: 각 페인포인트가 얼마나 자주·크게 발생하는지
-4. 경쟁 서비스 현황: 기존 서비스가 해결하는 부분과 못 하는 부분
-5. 해결 기회(Gap): 아직 충분히 해결되지 않은 빈틈
+- 대표적인 글로벌 유전체 분석 플랫폼 사례(예: DNAnexus, Terra, Illumina BaseSpace, Seven Bridges 등)와 각 특징
+- 클라우드 기반 격리 연구환경(TRE / Secure Research Environment)의 구조와 보안·규제 대응 방식
+- 대용량 유전체 데이터(FASTQ/VCF) 처리 아키텍처 및 인프라 구성 동향
+- 구독형(SaaS) 제공 사례와 시장 성장 전망
 
-각 항목마다 어느 자료에 근거했는지 출처를 함께 표시해줘.</pre>
+정부·공공기관·연구보고서 및 공식 문서 등 신뢰할 수 있는 출처 중심으로 정리해줘.</pre>
+          </div>
+          <p>Deep Research가 찾아준 자료 중 신뢰할 수 있는 것을 골라 <strong>[소스로 추가]</strong>하면, 기존 2개 자료와 함께 분석에 활용됩니다.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">1-D</span>
+          <h3>자료 검토 4단계 · 이해 → 검증 → 분석 → 적용</h3>
+          <span class="step-tool">NotebookLM</span>
+          <span class="time">00:35~00:50</span>
+        </div>
+        <div class="step-body">
+          <p>업로드·추가한 자료를 <strong>꼼꼼히 씹어먹는 4단계 검토 흐름</strong>입니다. 각 단계에 최적화된 프롬프트로 원본 자료의 맥락을 정확히 파악하고 활용 가치를 극대화합니다.</p>
+
+          <div class="note">💡 <strong>활용 팁 — 역할 부여</strong>: 검토를 시작하기 전, 채팅창의 <strong>[채팅 설정]</strong>에서 <strong>'대화 목표, 스타일 또는 역할 정의'</strong>를 <strong>[맞춤]</strong>으로 선택하면 입력창이 나타납니다. 이 입력창에 아래 문장을 넣어 AI에게 역할을 부여하면 답변 품질이 올라갑니다.</div>
+          <div class="prompt">
+            <div class="prompt-label"><span>역할 정의 입력값</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>너는 중견 IT기업의 10년 차 바이오·유전체 신사업 기획 전략가야. 업로드한 자료를 기반으로 자료를 검토해 줘.</pre>
           </div>
 
+          <h4>① 핵심 파악·맥락 이해 <span style="color:var(--muted);font-weight:600;">(Comprehension)</span></h4>
           <div class="prompt">
-            <div class="prompt-label"><span>프롬프트 · 추가 질의(선택)</span>
+            <div class="prompt-label"><span>프롬프트 · 핵심 주제 도출</span>
               <button class="copy-btn" type="button">복사</button></div>
-            <pre>위 분석에서, 우리가 가장 우선적으로 공략해야 할 고객 문제 1가지를 고르고
-그 이유(시장성·해결 가능성·차별성)를 근거와 함께 설명해줘.</pre>
+            <pre>현재 노트북에 업로드된 모든 소스(문서)를 교차 검토하여, 가장 비중 있게 다뤄지는 핵심 주제나 주요 관점 5가지를 도출해 줘. 각 주제를 가장 깊이 있고 풍부하게 설명하고 있는 대표 소스를 하나씩 매칭하여 아래 양식의 표로 정리해 줘.
+
+| 중요도(1~5순위) | 핵심 주제 및 주요 관점 | 대표 소스 제목 | 선정 이유 |</pre>
           </div>
 
-          <h4>✅ 이 단계 산출물</h4>
+          <h4>② 교차 검증·신뢰성 평가 <span style="color:var(--muted);font-weight:600;">(Cross-Validation)</span></h4>
+          <div class="prompt">
+            <div class="prompt-label"><span>프롬프트 · 신뢰성 검증 표</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>업로드한 자료들의 신뢰도와 객관성을 꼼꼼하게 검증하려고 해. 제공된 모든 소스를 검토해서 아래 양식에 따라 표로 깔끔하게 정리해 줘.
+
+| 파일명 | 소스 제목 | 발행일 | 저자(소속) | 소스 구분 | 핵심 주제 및 관점 | 주장을 뒷받침하는 주요 근거 |</pre>
+          </div>
+
+          <h4>③ 인사이트 도출·리스크 분석 <span style="color:var(--muted);font-weight:600;">(Insight &amp; Analysis)</span></h4>
+          <div class="prompt">
+            <div class="prompt-label"><span>프롬프트 ③-1 · 공통 인사이트</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>업로드된 모든 문서를 교차 분석하여, 서로 다른 소스 간에 공통적으로 연결되는 핵심 인사이트 3가지를 도출해 줘.</pre>
+          </div>
+          <div class="prompt">
+            <div class="prompt-label"><span>프롬프트 ③-2 · 액션 아이템</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>도출된 인사이트와 다면적 리스크 분석 결과를 바탕으로, 솔루션 기획 책임자가 당장 실행해야 할 구체적인 '액션 아이템' 5가지를 우선순위가 높은 순서대로 제안해 줘.</pre>
+          </div>
+
+          <h4>④ 아이디어 적용·기획서 변환 <span style="color:var(--muted);font-weight:600;">(Application)</span></h4>
+          <div class="prompt">
+            <div class="prompt-label"><span>프롬프트 ④-1 · 시장 환경 분석 슬라이드</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>도출된 인사이트로 신사업 기획서 '시장 환경 분석' 슬라이드의 헤드라인 1줄과 주요 불릿 3개를 작성해 줘.</pre>
+          </div>
+          <div class="prompt">
+            <div class="prompt-label"><span>프롬프트 ④-2 · 도입 기대효과</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>제약사·대학병원·국책연구소를 고객으로 할 때, 유전체 분석 TRE 플랫폼 도입 기대효과를 '정량적 효과'와 '정성적 효과'로 나눠 작성해 줘.</pre>
+          </div>
+
+          <div class="note">💡 <strong>메모 → 소스로 저장</strong>: ③ 인사이트 도출, ④ 아이디어 적용 단계에서 얻은 답변은 <strong>[메모에 복사]</strong>로 저장한 뒤, 그중 특히 쓸모 있는 메모는 해당 메모를 선택해 <strong>[소스로 저장(변환)]</strong> 하세요. 메모가 노트북의 <strong>정식 소스</strong>가 되어 2교시 요구사항 도출과 기획서 작성의 근거로 재활용됩니다.</div>
+
+          <h4>✅ 1교시 산출물</h4>
           <ul>
-            <li>시장·고객 문제 분석표 (시장 변화·페인포인트·경쟁·기회)</li>
-            <li>우선 공략 문제 1가지</li>
+            <li>3개 도구 로그인 확인 완료</li>
+            <li>2개 자료 + Deep Research 추가 소스가 담긴 지식 저장소 노트북</li>
+            <li>4단계 검토 결과: 핵심 주제 5 · 신뢰성 검증표 · 공통 인사이트 3 · 액션 아이템 5 · 초안용 슬라이드/기대효과</li>
           </ul>
+          <div class="note">1교시 검토 결과(인사이트·액션 아이템)는 2교시 기획서 초안의 근거 자료로 이어집니다.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">＋</span>
+          <h3>보너스 실습 · NotebookLM 스튜디오 활용 (시간이 남으면)</h3>
+          <span class="step-tool">NotebookLM · 스튜디오</span>
+        </div>
+        <div class="step-body">
+          <p>1교시 실습을 일찍 마쳤다면, NotebookLM 화면 <strong>오른쪽의 [스튜디오(Studio)]</strong> 패널에서 업로드한 자료를 다양한 형태로 자동 변환해 보세요.</p>
+
+          <h4>① AI 오디오 개요 (Audio Overview)</h4>
+          <ol>
+            <li>스튜디오 패널에서 <strong>[오디오 개요]</strong>의 <strong>[생성]</strong>을 클릭합니다.</li>
+            <li>업로드한 자료가 <strong>두 명의 진행자가 대화하는 팟캐스트</strong> 형식으로 요약됩니다.</li>
+            <li>생성 전 <strong>[맞춤설정]</strong>을 눌러 아래처럼 초점을 지정하면 더 유용합니다. 완성되면 재생하며 핵심을 귀로 정리해 보세요.</li>
+          </ol>
+          <div class="prompt">
+            <div class="prompt-label"><span>오디오 개요 맞춤설정 · 입력값</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>유전체 분석 TRE 플랫폼 신사업 관점에서, 시장 배경·보안 규제·핵심 아키텍처·비즈니스 기회를 중심으로 핵심만 짚어주는 대담 형식으로 만들어 줘.</pre>
+          </div>
+
+          <h4>② 슬라이드 자료 (Slides)</h4>
+          <ol>
+            <li>스튜디오 패널에서 <strong>[슬라이드]</strong> 생성을 클릭합니다.</li>
+            <li>자료의 핵심 내용이 <strong>발표용 슬라이드 형태</strong>로 자동 구성됩니다.</li>
+            <li>필요하면 아래 프롬프트로 초점을 지정해 재생성하고, 3교시 PPT 제작 시 참고 자료로 활용하세요.</li>
+          </ol>
+          <div class="prompt">
+            <div class="prompt-label"><span>슬라이드 생성 · 초점 지정(선택)</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>유전체 분석 TRE 플랫폼 신사업 제안 관점에서, 사업 배경 → 시장 트렌드 → 솔루션/보안 아키텍처 → 비즈니스 모델 → 기대효과 순서로 요약 슬라이드를 만들어 줘.</pre>
+          </div>
+
+          <div class="note">스튜디오에는 이 외에도 <strong>마인드맵·리포트·타임라인·FAQ</strong> 등 자동 학습 도구가 있으니, 시간이 더 남으면 자유롭게 생성해 보세요.</div>
         </div>
       </div>
     </section>
@@ -99,58 +302,119 @@
     <section id="step2">
       <div class="section-title">
         <span class="section-number">02</span>
-        <h2>2교시 · 기획서 초안 작성</h2>
+        <h2>2교시 · 요구사항 도출 & 기획서 초안 작성</h2>
       </div>
-      <p class="lead">분석 결과를 신규 솔루션 기획서 초안으로 변환합니다. NotebookLM 분석표를 복사해 Gemini에 붙여넣으세요.</p>
+      <p class="lead">🎯 목표: NotebookLM으로 팩트를 추출하고, Gemini + Canvas로 기획서 초안을 완성합니다.</p>
 
       <div class="step">
         <div class="step-head">
-          <span class="step-num">B2</span>
-          <h3>Gemini + Canvas로 콘셉트·초안 작성</h3>
+          <span class="step-num">2-A</span>
+          <h3>NotebookLM으로 시장 배경·기술 요구사항 도출</h3>
+          <span class="step-tool">NotebookLM</span>
+          <span class="time">01:00~01:25</span>
+        </div>
+        <div class="step-body">
+          <p>NotebookLM 채팅창에 아래 질문들을 <strong>순서대로 입력</strong>하고, 답변 우측 상단의 <strong>[메모에 복사(Copy to Note)]</strong> 버튼을 눌러 각각 별도 메모로 저장하세요.</p>
+
+          <div class="prompt">
+            <div class="prompt-label"><span>질문 1 · 시장 배경</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>업로드된 자료를 바탕으로, 바이오 연구 기관들이 왜 자체 서버 대신 클라우드 기반의 TRE(Trusted Research Environment) 플랫폼을 도입해야 하는지 핵심 이유 3가지를 정리해 줘.</pre>
+          </div>
+
+          <div class="prompt">
+            <div class="prompt-label"><span>질문 2 · 보안/규제 대책</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>유전체 데이터 분석 시 법적 규제를 준수하기 위해 플랫폼이 반드시 갖춰야 할 보안 필수 요구사항을 요약해 줘. 답변 내용에 해당하는 소스 출처(Citation) 번호도 함께 확인해 봐.</pre>
+          </div>
+
+          <div class="prompt">
+            <div class="prompt-label"><span>질문 3 · 기술 아키텍처 요구사항</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>이 플랫폼의 인프라 구성을 위해 필요한 네트워크 분리(DMZ/내부망), API 게이트웨이, L4 로드밸런서, 그리고 Kubernetes 노드 구성 요건을 표(Table) 형태로 정리해 줘.</pre>
+          </div>
+
+          <div class="note">💡 <strong>메모 → 소스로 저장</strong>: 채팅으로 얻은 답변은 <strong>[메모에 복사]</strong>로 저장한 뒤, 그중 특히 쓸모 있는 메모는 해당 메모를 선택해 <strong>[소스로 저장(변환)]</strong> 하세요. 메모가 노트북의 <strong>정식 소스</strong>가 되어 이후 분석·검증과 다음 단계에서 근거로 재활용됩니다.</div>
+
+          <h4>✅ 산출물</h4>
+          <ul>
+            <li>시장 배경 메모 · 보안/규제 요구사항 메모(출처 포함) · 기술 아키텍처 요구사항 표</li>
+            <li>좋은 메모를 <strong>소스로 변환</strong>해 보강한 노트북</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">2-B</span>
+          <h3>Gemini + Canvas로 사업 구체화 & 기획서 초안</h3>
           <span class="step-tool">Gemini + Canvas</span>
-          <span class="time">01:00~01:50</span>
+          <span class="time">01:25~01:50</span>
         </div>
         <div class="step-body">
           <ol>
-            <li><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> 접속 → 입력창에서 <strong>Canvas</strong> 기능 켜기</li>
-            <li>1교시 <strong>분석표를 붙여넣고</strong> 아래 프롬프트로 솔루션 콘셉트를 도출합니다.</li>
-            <li>이어서 초안 작성 프롬프트로 Canvas 문서를 생성합니다.</li>
+            <li><a href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a> 채팅창에서 1교시에 만든 <strong>NotebookLM 노트북을 가져오도록 연결(설정)</strong>합니다. Gemini 입력창의 도구·앱 연결에서 <strong>NotebookLM(해당 노트북)</strong>을 소스로 지정하면, 메모를 복사·붙여넣지 않아도 노트북 내용을 그대로 참조합니다.</li>
+            <li>입력창의 <strong>Canvas</strong> 기능을 켭니다.</li>
+            <li>연결된 노트북을 기반으로 아래 프롬프트를 순서대로 입력합니다.</li>
           </ol>
 
           <div class="prompt">
-            <div class="prompt-label"><span>프롬프트 · 솔루션 콘셉트 & 핵심 기능</span>
+            <div class="prompt-label"><span>Gemini 프롬프트 ① · 차별화 전략 & 비즈니스 모델</span>
               <button class="copy-btn" type="button">복사</button></div>
-            <pre>아래는 시장·고객 문제 분석 결과야.
-[여기에 1교시 분석표 붙여넣기]
+            <pre>당신은 클라우드 비즈니스 매니저이자 솔루션 아키텍트입니다.
+연결된 NotebookLM 노트북의 자료와 검토 결과(핵심 주제·인사이트·요구사항)를 기반으로, 대기업 및 연구소를 타겟으로 하는 '구독형(SaaS) 유전체 분석 TRE 플랫폼'의 차별화 전략(USP)과 비즈니스 모델을 구체화하려고 합니다.
 
-이 분석을 바탕으로 신규 솔루션을 기획해줘.
-1. 솔루션 콘셉트: 어떤 문제를 어떤 방식으로 해결하는지 한 문장 정의
-2. 타깃 고객: 1차 타깃과 사용 상황
-3. 핵심 기능 목록: 기능명 / 고객 가치 / 우선순위(상·중·하)를 표로
-4. 차별점: 경쟁 서비스와 다른 점 3가지
-표와 짧은 설명을 함께 정리해줘.</pre>
+1. 타겟 고객(제약사, 대학병원, 국책연구소)별로 이 플랫폼이 줄 수 있는 핵심 가치(Value Proposition)를 정의해 주세요.
+2. 초기 구축비와 월 구독료를 조합한 B2B SaaS 비즈니스 모델(요금제안)을 제안해 주세요.
+3. 타사 대비 경쟁 우위를 점할 수 있는 '보안성' 중심의 마케팅 메시지를 3가지 뽑아주세요.</pre>
           </div>
+
+          <p>이어서 같은 Gemini 대화에 <strong>연속으로</strong> 아래 프롬프트를 입력해 기획서 초안을 Canvas 문서로 완성합니다.</p>
 
           <div class="prompt">
-            <div class="prompt-label"><span>프롬프트 · 기획서 초안 (Canvas)</span>
+            <div class="prompt-label"><span>Gemini 프롬프트 ② · 기획서 초안 (Canvas)</span>
               <button class="copy-btn" type="button">복사</button></div>
-            <pre>위 솔루션 콘셉트와 문제 분석을 반영해서, 신규 솔루션 기획서 초안을 Canvas에 작성해줘.
-아래 구성으로 각 장마다 3~5문장 분량의 초안을 작성해:
+            <pre>지금까지 도출된 모든 내용을 종합하여, 임원진 보고용 '신사업 솔루션 기획서 초안'을 Canvas에 작성해 주세요.
 
-1. 배경 및 문제 정의
-2. 솔루션 콘셉트 및 타깃 고객
-3. 핵심 기능 (기능별 가치)
-4. MVP 범위 (초기 검증용 최소 기능)
-5. 차별화 포인트
-6. 기대효과 및 추진 방향
+[작성 조건]
+- 문체는 공적인 비즈니스 톤앤매너를 유지하며, 보고에 적합하도록 개조식(~함, ~임) 중심으로 작성해 주세요.
+- 구조는 아래 목차를 반드시 준수해 주세요.
 
-경영진 보고용 기획서 톤(간결하고 설득력 있는 문체)으로 작성해줘.</pre>
+[기획서 목차]
+1. 사업 추진 배경 및 필요성
+2. 글로벌 시장 트렌드 및 타겟 고객 Pain Point
+3. 솔루션 핵심 기능 및 아키텍처 개요 (네트워크 및 K8s 구성 포함)
+4. 보안 및 규제 대응 방안
+5. 비즈니스 모델 및 기대 효과</pre>
           </div>
 
-          <h4>✅ 이 단계 산출물</h4>
+          <h4>✅ 산출물</h4>
           <ul>
-            <li>솔루션 콘셉트 + 핵심 기능 목록(우선순위 포함)</li>
-            <li>Canvas 기획서 초안 (6개 장 구성)</li>
+            <li>타겟 고객별 가치 · B2B SaaS 비즈니스 모델 · 보안 마케팅 메시지</li>
+            <li>5개 목차 구조의 <strong>Canvas 기획서 초안</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">2-C</span>
+          <h3>Canvas 문서 내보내기 & PC 저장</h3>
+          <span class="step-tool">Canvas · Google Docs</span>
+          <span class="time">저장</span>
+        </div>
+        <div class="step-body">
+          <p>완성한 Canvas 기획서 초안을 구글 문서로 내보내 다듬은 뒤, 마크다운 파일로 PC에 저장합니다. 이 파일이 <strong>3교시 Claude 입력 자료</strong>가 됩니다.</p>
+          <ol>
+            <li>Canvas 문서 상단의 <strong>[공유 및 내보내기]</strong> 버튼을 누릅니다.</li>
+            <li><strong>[Docs로 내보내기]</strong>를 실행하면 내 <strong>구글 드라이브</strong>에 구글 문서로 저장됩니다. 저장된 구글 문서를 엽니다.</li>
+            <li>구글 문서에서 <strong>추가로 필요한 내용을 직접 수정·보완</strong>합니다.</li>
+            <li>수정이 끝나면 <strong>[파일] → [다운로드] → [마크다운(.md)]</strong>을 선택해 PC에 저장합니다.</li>
+          </ol>
+          <div class="note">⏳ <strong>주의</strong>: <strong>[Docs로 내보내기]</strong>와 <strong>[마크다운(.md)]</strong>은 버튼을 누른 뒤 처리에 <strong>시간이 다소 걸립니다.</strong> 창을 닫지 말고 인내심을 가지고 기다리세요.</div>
+          <h4>✅ 2교시 산출물</h4>
+          <ul>
+            <li>구글 문서로 다듬은 기획서 + PC에 저장된 <strong>기획서 초안 마크다운(.md) 파일</strong> (3교시 입력 자료)</li>
           </ul>
         </div>
       </div>
@@ -160,61 +424,152 @@
     <section id="step3">
       <div class="section-title">
         <span class="section-number">03</span>
-        <h2>3교시 · 논리 구조화와 산출물 완성</h2>
+        <h2>3교시 · 발표용 PPT 제작 및 시각화</h2>
       </div>
-      <p class="lead">경영진이 판단하기 쉬운 사업화 스토리라인과 기획서 목차를 완성합니다.</p>
+      <p class="lead">🎯 목표: 기획서 초안을 Claude로 가져와 발표 구성을 잡고, 아키텍처·비즈니스 모델을 시각화한 <strong>발표용 PPT(.pptx)</strong>를 완성합니다.</p>
 
       <div class="step">
         <div class="step-head">
-          <span class="step-num">B3</span>
-          <h3>Claude로 MVP·목차·발표 요약 완성</h3>
+          <span class="step-num">3-A</span>
+          <h3>Claude로 슬라이드 구성 도출</h3>
           <span class="step-tool">Claude</span>
-          <span class="time">02:00~02:50</span>
+          <span class="time">02:00~02:20</span>
         </div>
         <div class="step-body">
           <ol>
-            <li><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> 접속 → 새 대화 시작</li>
-            <li>2교시 Canvas 초안을 붙여넣고 아래 프롬프트로 MVP 범위와 목차를 정교화합니다.</li>
-            <li>마지막으로 3분 발표 요약을 생성합니다.</li>
+            <li><strong>Claude 데스크톱 앱</strong>에서 새 대화를 시작합니다.</li>
+            <li>2교시에서 저장한 <strong>기획서 초안(.md 파일 또는 구글 문서) 내용을 붙여넣고</strong> 아래 프롬프트를 입력합니다.</li>
           </ol>
 
           <div class="prompt">
-            <div class="prompt-label"><span>프롬프트 · MVP 범위 + 기획서 목차</span>
+            <div class="prompt-label"><span>Claude 프롬프트 ① · 발표 슬라이드 구성</span>
               <button class="copy-btn" type="button">복사</button></div>
-            <pre>아래는 신규 솔루션 기획서 초안이야.
+            <pre>아래는 유전체 분석 TRE 플랫폼 신사업 기획서 초안이야.
 [여기에 2교시 기획서 초안 붙여넣기]
 
-두 가지를 정리해줘.
-1. MVP 범위: 초기 3개월 안에 검증 가능한 최소 기능만 골라
-   "포함 / 제외 / 그 이유"를 표로
-2. 기획서 목차: 경영진 보고용 기획서 장·절 구성(1., 1.1 형식)으로,
-   의사결정 흐름(문제→솔루션→검증→기대효과) 순서로
+임원진 보고용 발표 자료(약 8~10장)로 재구성해줘.
+각 슬라이드마다 다음을 표로 정리해줘.
+1. 슬라이드 번호 / 제목
+2. 핵심 메시지 (한 줄), 서브 메세지(한줄)
+3. 담을 내용 (10줄이상 요약)
+4. 추천 시각화 요소 (다이어그램·표·차트 중 무엇을 넣을지)
 
-MVP 표와 목차를 함께 보여줘.</pre>
+첫 장은 표지, 마지막 장은 기대효과와 다음 단계로 구성해줘.</pre>
           </div>
 
-          <div class="prompt">
-            <div class="prompt-label"><span>프롬프트 · 3분 발표 요약</span>
-              <button class="copy-btn" type="button">복사</button></div>
-            <pre>이 기획 내용을 경영진 앞에서 3분간 보고한다고 가정하고,
-발표 스크립트를 작성해줘.
-- 문제 정의 (30초)
-- 솔루션 콘셉트와 핵심 기능 (90초)
-- MVP 추진 방향과 기대효과 (60초)
-실제로 읽을 수 있는 구어체 문장으로 작성해줘.</pre>
-          </div>
-
-          <h4>✅ 최종 산출물</h4>
+          <h4>✅ 산출물</h4>
           <ul>
-            <li>시장·문제 분석표 · 솔루션 콘셉트 · 기획서 초안</li>
-            <li>MVP 범위표 + 기획서 목차</li>
-            <li>3분 발표 스크립트</li>
+            <li>8~10장 슬라이드 구성표 (제목·핵심 메시지·시각화 요소)</li>
           </ul>
         </div>
       </div>
 
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">3-B</span>
+          <h3>Claude로 발표용 PPT(.pptx) 만들기</h3>
+          <span class="step-tool">Claude · Design</span>
+          <span class="time">02:20~02:45</span>
+        </div>
+        <div class="step-body">
+          <p>슬라이드 구성이 정해지면, Claude 대화에 <strong>필요한 자료를 첨부</strong>하고 아래 상세 프롬프트로 <strong>다운로드 가능한 PowerPoint(.pptx)</strong>를 생성합니다.</p>
+          <ol>
+            <li>Claude 데스크톱 앱 대화에 다음을 <strong>첨부</strong>합니다.
+              <ul>
+                <li>2교시에서 저장한 <strong>기획서 초안(.md)</strong> 파일</li>
+                <li><strong>Pretendard 폰트 파일</strong> — <code>Pretendard-SemiBold.ttf</code>(제목용), <code>Pretendard-Regular.ttf</code>(본문용) <span style="color:var(--muted);">· 사전 준비에서 다운로드</span></li>
+                <li><strong>McKinsey Consulting Proposal.pdf</strong> — 표지·간지·내용·도식 디자인 및 논리 전개 참고용 <span style="color:var(--muted);">· 사전 준비에서 다운로드</span></li>
+              </ul>
+            </li>
+            <li>아래 프롬프트를 붙여넣어 PPT 생성을 요청합니다.</li>
+          </ol>
+
+          <div class="prompt">
+            <div class="prompt-label"><span>Claude 프롬프트 ② · 발표용 PPT 생성</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>첨부한 '유전체 분석 TRE 플랫폼 신사업 기획서 초안(.md)' 파일 내용을 참고해서 발표용 PPT를 만들어줘.
+
+1. 기획서 내용을 슬라이드로 나누어 A4 비율(4:3)의 PPT로 만들어줘. 표지 → 사업 배경·필요성 → 글로벌 시장 트렌드 → 솔루션·보안 아키텍처 → 비즈니스 모델 → 기대효과 → 다음 단계 순서로, 약 8~10장으로 구성해줘.
+2. 컬러는 #FFFFFF, #161A1F, #2768FF, #1B2E59, #FFFF68 활용. 필요에 따라 유사색 활용해줘.
+3. 폰트는 제목용 폰트 'Pretendard SemiBold', 본문용 폰트 'Pretendard Regular' 활용(폰트 첨부 완료).
+4. 심플한 아이콘, 도형 위주의 디자인.
+5. 줄글을 내용의 흐름에 맞춰 도식화. 특히 솔루션 아키텍처는 DMZ/내부망 분리, API 게이트웨이, L4 로드밸런서, Kubernetes 노드를 도형과 화살표로 도식화해줘.
+6. 첨부한 'McKinsey Consulting Proposal.pdf'를 디자인·구성 레퍼런스로 삼아 슬라이드 유형별로 참고해줘:
+   - 표지 슬라이드 → PDF의 표지 레이아웃(타이틀 배치·여백·톤앤매너) 참고
+   - 섹션 구분(간지) 슬라이드 → PDF의 섹션 전환 페이지 스타일 참고
+   - 일반 내용 슬라이드 → PDF의 본문 슬라이드 구성(헤드라인·불릿·여백) 참고
+   - 차트/데이터·아키텍처 슬라이드 → PDF의 도식·다이어그램 표현 방식 참고
+   아울러 PDF의 논리 전개 방식(문제 정의 → 접근법 → 솔루션 → 기대효과 흐름)도 우리 기획서 내용에 맞게 벤치마킹해줘.
+7. 완성된 .pptx 파일을 내려받을 수 있게 해줘.</pre>
+          </div>
+
+          <h4>✅ 3교시 산출물</h4>
+          <ul>
+            <li>PC에 저장된 <strong>발표용 PPT(.pptx) 파일</strong> (아키텍처 다이어그램·비즈니스 모델 표 포함)</li>
+          </ul>
+          <div class="note">내려받은 .pptx는 <strong>PowerPoint에서 열어</strong> 색상·문구를 최종 손질한 뒤 그대로 발표할 수 있습니다.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">3-C</span>
+          <h3>3분 발표 스크립트 (마무리)</h3>
+          <span class="step-tool">Claude</span>
+          <span class="time">02:45~02:50</span>
+        </div>
+        <div class="step-body">
+          <div class="prompt">
+            <div class="prompt-label"><span>Claude 프롬프트 ③ · 3분 발표 스크립트</span>
+              <button class="copy-btn" type="button">복사</button></div>
+            <pre>이 발표용 PPT로 임원진 앞에서 3분간 발표한다고 가정하고 발표 스크립트를 작성해줘.
+- 사업 배경·필요성 (40초)
+- 솔루션과 보안 아키텍처 (80초)
+- 비즈니스 모델과 기대효과 (60초)
+실제로 읽을 수 있는 구어체 문장으로 작성해줘.</pre>
+          </div>
+        </div>
+      </div>
+
       <div class="note">
-        마무리(02:50~03:00): 완성한 기획서 초안을 팀과 공유하고, <strong>실제 솔루션 기획 업무에 어떻게 적용할지</strong> 한 가지씩 정리해 보세요.
+        마무리(02:50~03:00): 완성한 기획서와 발표 슬라이드를 팀과 공유하고, <strong>실제 신사업 기획 업무에 어떻게 적용할지</strong> 한 가지씩 정리해 보세요.
+      </div>
+    </section>
+
+    <!-- Tip -->
+    <section id="tips">
+      <div class="section-title">
+        <span class="section-number">💡</span>
+        <h2>수강생을 위한 Tip & Checkpoint</h2>
+      </div>
+
+      <h3>NotebookLM의 '출처' 기능 체감하기</h3>
+      <p>2교시에서 AI가 답변을 생성할 때 붙여주는 <strong>번호표(인덱스)</strong>를 클릭해 보세요. 복잡한 보고서를 작성할 때 AI가 <strong>거짓말(환각) 없이 내가 올린 문서에 기반해</strong> 답변하고 있는지 실시간으로 검증하는 핵심 기능입니다.</p>
+
+      <h3>Claude와 대화하며 PPT 다듬기</h3>
+      <p>3교시에서 생성된 PPT가 마음에 들지 않으면, Claude에게 추가 피드백을 주며 고도화해 보세요. 요청할 때마다 .pptx가 다시 생성됩니다. 아래처럼 <strong>PowerPoint 안에 Claude 애드인을 설치</strong>하면, 파일을 오가지 않고 PowerPoint 화면에서 바로 대화하며 슬라이드를 다듬을 수 있습니다.</p>
+
+      <div class="note">🧩 <strong>PowerPoint용 Claude 애드인 설치</strong><br />
+        ① PowerPoint(데스크톱 앱)에서 3교시에 생성한 .pptx 파일을 엽니다.<br />
+        ② 상단 리본의 <strong>[삽입]</strong> 탭 → <strong>[추가 기능 가져오기]</strong>(Get Add-ins)를 클릭합니다.<br />
+        ③ Microsoft AppSource 검색창에 <strong>"Claude"</strong>를 검색합니다.<br />
+        ④ 검색된 Claude 애드인을 선택해 <strong>[추가]</strong>를 눌러 설치합니다.<br />
+        ⑤ 설치가 끝나면 리본 메뉴에 Claude 아이콘이 생기고, 클릭하면 화면 오른쪽에 <strong>Claude 사이드바</strong>가 열립니다.<br />
+        ⑥ 사이드바에서 <strong>Claude 계정으로 로그인</strong>하면 바로 대화를 시작할 수 있습니다.
+      </div>
+
+      <div class="note">💡 <strong>애드인으로 PPT 다듬는 법</strong>: 다듬고 싶은 슬라이드를 PowerPoint에서 선택한 상태로 사이드바에 수정 요청을 입력하면, Claude가 <strong>현재 열려 있는 프레젠테이션을 직접 인식</strong>해 해당 슬라이드에 반영할 변경안을 제안합니다. 제안 내용을 확인한 뒤 적용하면 별도로 파일을 내려받고 다시 여는 과정 없이 바로 슬라이드에 반영됩니다. (조직의 Claude 플랜에 따라 애드인 사용 가능 여부가 다를 수 있으니, 보이지 않으면 진행자에게 문의하세요.)</div>
+
+      <div class="prompt">
+        <div class="prompt-label"><span>추가 피드백 예시 · 아키텍처 상세화</span>
+          <button class="copy-btn" type="button">복사</button></div>
+        <pre>아키텍처 슬라이드를 개발자가 이해할 수 있도록 구성 요소 간 연결을 더 명확하게 다시 그려줘</pre>
+      </div>
+
+      <div class="prompt">
+        <div class="prompt-label"><span>추가 피드백 예시 · 요약 슬라이드 추가</span>
+          <button class="copy-btn" type="button">복사</button></div>
+        <pre>맨 앞에 핵심을 5줄로 요약한 Executive Summary 슬라이드를 한 장 추가해줘</pre>
       </div>
     </section>
 
@@ -223,7 +578,7 @@ MVP 표와 목차를 함께 보여줘.</pre>
       <a class="btn" href="group-a.html">A그룹(제안서형) 보기 →</a>
     </div>
 
-    <div class="footer">B그룹 · 기획서형 실습 · AI 멀티툴 실습 워크숍</div>
+    <div class="footer">B그룹 · 유전체 분석 TRE 플랫폼 신사업 기획서 실습 · AI 멀티툴 실습 워크숍</div>
   </main>
 
   <script src="copy.js"></script>
