@@ -54,7 +54,7 @@
         <span class="section-number">📂</span>
         <h2>0. 사전 준비 (Prerequisites)</h2>
       </div>
-      <p class="lead">실습에는 아래 <strong>자료 2종</strong>과 <strong>Pretendard 폰트</strong>가 필요합니다. 각 항목의 <strong>[다운로드]</strong> 또는 <strong>[열기]</strong> 버튼을 눌러 준비해 두세요. 자료 2종은 1교시에 NotebookLM에 업로드·소스로 추가하고, 폰트는 3교시 PPT 제작에 사용합니다.</p>
+      <p class="lead">실습에는 아래 <strong>자료 3종</strong>과 <strong>Pretendard 폰트</strong>가 필요합니다. 각 항목의 <strong>[다운로드]</strong> 또는 <strong>[열기]</strong> 버튼을 눌러 준비해 두세요. <strong>자료 1·2</strong>는 1교시에 NotebookLM에 업로드·소스로 추가하고, <strong>참고자료</strong>와 폰트는 3교시 PPT 제작에 사용합니다.</p>
 
       <div class="step">
         <div class="step-head">
@@ -492,7 +492,7 @@
               <button class="copy-btn" type="button">복사</button></div>
             <pre>첨부한 '전자주주총회 플랫폼 구축사업 제안서 초안(.md)' 파일 내용을 참고해서 발표용 PPT를 만들어줘.
 
-1. 제안서 내용을 슬라이드로 나누어 A4 비율(4:3)의 PPT로 만들어줘. 표지 → 사업 이해·추진배경 → 요구사항 대응 방안 → 차별화 전략 → 사업 수행 방안 → 기대효과 → 다음 단계 순서로, 약 8~10장으로 구성해줘.
+1. 제안서 내용을 슬라이드로 나누어 A4 가로 비율(297×210mm)의 PPT로 만들어줘. 표지 → 사업 이해·추진배경 → 요구사항 대응 방안 → 차별화 전략 → 사업 수행 방안 → 기대효과 → 다음 단계 순서로, 약 8~10장으로 구성해줘.
 2. 컬러는 #FFFFFF, #161A1F, #2768FF, #1B2E59, #FFFF68 활용. 필요에 따라 유사색 활용해줘.
 3. 폰트는 제목용 폰트 'Pretendard SemiBold', 본문용 폰트 'Pretendard Regular' 활용(폰트 첨부 완료).
 4. 심플한 아이콘, 도형 위주의 디자인.
@@ -586,11 +586,27 @@
       <div class="step">
         <div class="step-head">
           <span class="step-num">스킬</span>
-          <h3>nds-proposal-pptx.skill 다운로드</h3>
-          <a class="btn primary" style="margin-left:auto;" href="files/nds-proposal-pptx.skill" download="nds-proposal-pptx.skill">⬇ 다운로드</a>
+          <h3>nds-proposal-pptx.zip 다운로드</h3>
+          <a class="btn primary" style="margin-left:auto;" href="files/nds-proposal-pptx.zip" download="nds-proposal-pptx.zip">⬇ 다운로드</a>
         </div>
         <div class="step-body">
           <p>공공/SI 제안서를 엔디에스(NDS) 표준 디자인 시스템(로고·폰트·컬러)에 맞춰 고밀도 PPT로 자동 구성해주는 Claude 스킬입니다. 3교시에서 사용한 프롬프트 흐름이 이 스킬 안에 규칙으로 담겨 있어, 스킬을 등록하면 매번 상세 프롬프트를 입력하지 않아도 됩니다.</p>
+          <div class="note">⚠️ 내려받은 <code>nds-proposal-pptx.zip</code>은 <strong>압축을 풀지 말고 ZIP 파일 그대로</strong> 업로드해야 합니다. Claude 스킬 업로드는 ZIP 형식만 받습니다.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-head">
+          <span class="step-num">사전조건</span>
+          <h3>먼저 '코드 실행 및 파일 생성'을 켜야 합니다</h3>
+        </div>
+        <div class="step-body">
+          <p>이 스킬은 <strong>Node.js 코드를 실행해 PPT 파일을 직접 생성</strong>하는 방식입니다. 따라서 아래 설정이 켜져 있지 않으면 스킬을 등록해도 PPT가 만들어지지 않습니다.</p>
+          <ol>
+            <li>Claude에서 <strong>[설정(Settings)] → [Capabilities(기능)]</strong>로 이동합니다.</li>
+            <li><strong>코드 실행 및 파일 생성(Code execution and file creation)</strong> 항목을 <strong>켜짐(On)</strong>으로 설정합니다.</li>
+          </ol>
+          <div class="note">🏢 <strong>Team / Enterprise 플랜 주의</strong>: 조직 관리자가 <strong>조직 설정(Organization settings) → Skills</strong>에서 <strong>Skills 기능</strong>과 <strong>코드 실행 및 파일 생성</strong>을 먼저 허용해야 구성원이 스킬을 업로드·사용할 수 있습니다. 메뉴가 보이지 않으면 사내 IT 담당자나 진행자에게 문의하세요.</div>
         </div>
       </div>
 
@@ -601,13 +617,13 @@
         </div>
         <div class="step-body">
           <ol>
-            <li><strong>Claude 데스크톱 앱</strong>(또는 claude.ai 웹)에서 좌측 하단 <strong>프로필 아이콘 → [설정(Settings)]</strong>을 엽니다.</li>
-            <li><strong>[Capabilities(기능)]</strong> 탭으로 이동해 <strong>Skills(스킬)</strong> 항목을 찾습니다.</li>
-            <li><strong>[Upload skill]</strong>(스킬 업로드) 버튼을 눌러, 위에서 다운로드한 <code>nds-proposal-pptx.skill</code> 파일을 선택합니다.</li>
+            <li>Claude(데스크톱 앱 또는 claude.ai 웹) 좌측 메뉴에서 <strong>[Customize(맞춤설정)] → [Skills(스킬)]</strong>로 이동합니다.</li>
+            <li>우측의 <strong>[+]</strong> 버튼을 누르고 <strong>[Create skill(스킬 만들기)]</strong>을 선택합니다.</li>
+            <li><strong>[Upload a skill(스킬 업로드)]</strong>을 선택한 뒤, 위에서 다운로드한 <code>nds-proposal-pptx.zip</code> 파일을 <strong>압축을 풀지 않은 ZIP 상태 그대로</strong> 올립니다.</li>
             <li>업로드가 끝나면 목록에 <strong>nds-proposal-pptx</strong> 스킬이 추가된 것을 확인하고, 토글을 <strong>켜짐(On)</strong>으로 설정합니다.</li>
             <li>새 대화를 시작해 제안서 내용과 함께 <code>nds-proposal-pptx 스킬로 PPT 만들어줘</code>처럼 요청하면, Claude가 스킬에 정의된 디자인 시스템과 절차를 적용해 PPT를 생성합니다.</li>
           </ol>
-          <div class="note">조직의 Claude 플랜(Pro/Team/Enterprise)에 따라 스킬 업로드 메뉴 노출 여부가 다를 수 있습니다. 메뉴가 보이지 않으면 진행자에게 문의하세요.</div>
+          <div class="note">스킬은 대화 내용이 스킬 설명과 맞으면 <strong>자동으로 호출</strong>되기도 하지만, 실습에서는 위처럼 <strong>스킬 이름을 직접 불러주는 편이 확실</strong>합니다. 메뉴 이름은 앱 버전·언어 설정에 따라 조금씩 다를 수 있습니다.</div>
         </div>
       </div>
 
